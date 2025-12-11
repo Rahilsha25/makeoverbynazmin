@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<?php /* Server-side rendered index with dynamic portfolio */ ?>
+<?php require __DIR__ . '/db.php'; ?>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- SEO META TAGS -->
+        <title>Makeover By Nazmin - Makeup Artist in Vadodara, Gujarat </title>
+    <meta name="description" content="Offering expert bridal makeup, HD makeup, hairstyling, and salon services. Rent premium bridal jewelry sets, lehengas, dupattas, and nikah pens for your special day. Make your wedding memorable with our personalized beauty and styling services.">
+        <meta name="author" content="Nazmin Diwan">
+        <meta name="keywords" content="Anand, Vadodara, Nazmin, diwan, bridal makeup, HD makeup, hairstyling services, salon services, bridal jewelry rental, lehenga rental, dupatta rental, nikah pen rental, wedding beauty services, bridal beauty expert, bridal makeup artist, wedding makeup services, hair styling for brides, wedding lehenga rental">
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico">
+    <link rel="canonical" href="https://makeoverbynazmin.netlify.app/">
+
+    <!-- Google META TAGS -->
+        <meta name="google-site-verification" content="CcsqwoTOoR2s3LVmrvX4-fcm3hy6rRuqzbo4msubvR8" />
+        <meta name="google-adsense-account" content="ca-pub-6580132140008498">
+    
+    <!-- CSS Links TAGS -->    
+    <!-- font icons -->
+        <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + JohnDoe main styles -->
+        <link rel="stylesheet" href="assets/css/johndoe.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Social Media Meta Tags-->
+        <meta property="og:title" content="Makeover By Nazmin - Makeup Artist in Vadodara, Gujarat">
+        <meta property="og:description" content="Offering expert bridal makeup, HD makeup, hairstyling, and salon services. Rent premium bridal jewelry sets, lehengas, dupattas, and nikah pens for your special day. Make your wedding memorable with our personalized beauty and styling services.">
+        <meta property="og:image" content="./assets/imgs/favicon.ico">
+                <meta property="og:url" content="https://makeoverbynazmin.netlify.app/">
+                <meta name="robots" content="index, follow">
+                <meta name="twitter:card" content="summary_large_image">
+                <meta name="twitter:title" content="Makeover By Nazmin - Makeup Artist in Vadodara, Gujarat">
+                <meta name="twitter:description" content="Expert bridal makeup, HD makeup, hairstyling, salon services and rental items.">
+                <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "LocalBusiness",
+                    "name": "Makeover By Nazmin",
+                    "image": "https://makeoverbynazmin.netlify.app/assets/imgs/avatar.jpeg",
+                    "@id": "https://makeoverbynazmin.netlify.app/",
+                    "url": "https://makeoverbynazmin.netlify.app/",
+                    "telephone": "+917265857123",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Tower B - 301 Chand Park Heights, Near Shubham Party Plot, Tandlja Vadodara",
+                        "addressLocality": "Vadodara",
+                        "addressRegion": "Gujarat",
+                        "postalCode": "",
+                        "addressCountry": "IN"
+                    },
+                    "sameAs": [
+                        "https://www.instagram.com/makeover__by__nazmin/"
+                    ]
+                }
+                </script>
+        </head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <!--<li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>-->
+                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/makeover__by__nazmin/" target="_blank" rel="noopener noreferrer"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://wa.me/7265857123/?text=Hello, I want a Makup Artist!" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 30px"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">Nazmin Diwan</h1>
+                <h6 class="header-mono" >Makeup Artist & Beauty Specialist</h6>
+                <a href="https://wa.me/7265857123/?text=Hello, I want a Makup Artist!" target="_blank" rel="noopener noreferrer"><button class="btn btn-primary btn-rounded">Contact Me</button></a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/avatar.jpeg" alt="" class="brand-img" alt = "Nazmin Diwan, Makeup Artist and Beauty Specialist in Vadodara Gujarat, Freelance, Appointment, Low cost, Top, Best">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Nazmin Diwan</h5>
+                        <div class="brand-subtitle">Makeup Artist</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">Makeup Artist | Beauty, Cosmetic & Personal Care</h5>
+                <p class="mt-20">As a skilled Makeup Artist and Beauty Specialist, I am passionate about enhancing your natural beauty and ensuring you feel confident and radiant for any occasion. Whether it's bridal makeup, special events, photoshoots, or everyday glamour, I offer personalized makeup services tailored to your unique style. I provide flawless, long-lasting results that highlight your individual features. Let me help you look and feel your best <br> <b>book your appointment today!</b></p>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Birthdate</span> : 06/06/1995</li>
+                    <li><span>Email</span> : divan.nishant66@gmail.com</li>
+                    <li><span>Phone</span> : +91 72658 57123</li>
+                    <li><span>Address</span> : Tower B - 301 Chand Park Heights, Near Shubham Party Plot, Tandlja Vadodara</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <!--<li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>-->
+                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/makeover__by__nazmin/" target="_blank" rel="noopener noreferrer"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link"  href="https://wa.me/7265857123/?text=Hello, I want a Makup Artist!" target="_blank"><i class="fa fa-whatsapp" style="font-size: 30px" aria-hidden="true"></i></a></li>
+                </ul>  
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><img src="./assets/imgs/bridal.png" style="width: 35px; height: 35px;"  alt = "Nazmin Diwan, Beautiful Women, Muslim Women, Muslim Wedding, Muslim Makeup, Makeup Artist and Beauty Specialist in Vadodara Gujarat, Freelance, Appointment, Low cost, Top, Best"></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Bridal</h6>
+                        <p class="subtitle"> Flawless bridal makeup for a picture-perfect look.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><img src="./assets/imgs/hairstyle.png" style="width: 35px; height: 35px;"   alt = "Nazmin Diwan, Beautiful Women, Muslim Women, Muslim Wedding, Muslim Makeup, Makeup Artist and Beauty Specialist in Vadodara Gujarat, Freelance, Appointment, Low cost, Top, Best"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Hairstyles</h6>
+                        <p class="subtitle">Custom hairstyles to complement your special day.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><img src="./assets/imgs/salon.png" style="width: 35px; height: 35px;"  alt = "Nazmin Diwan, Beautiful Women, Muslim Women, Muslim Wedding, Muslim Makeup, Makeup Artist and Beauty Specialist in Vadodara Gujarat, Freelance, Appointment, Low cost, Top, Best"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Salon Services</h6>
+                        <p class="subtitle">Personalized salon services to enhance your beauty.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-vector text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Bridal & HD Makeup</h5>
+                            <P class="subtitle"><b>I specialize in creating flawless bridal looks with HD makeup that enhances your natural beauty. Using high-quality products, I ensure your makeup stays fresh and picture-perfect throughout your special day, whether you prefer a soft glow or a bold, glamorous style.</b></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-package text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Salon Services</h5>
+                            <P class="subtitle"><b>Our Salon Services include a wide range of treatments, from facials to stylish haircuts also Waxing and more. Each service is tailored to your unique needs, ensuring you look and feel your best for any occasion.</b></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-map-alt text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Rental Items</h5>
+                            <P class="subtitle"><b>Rental Items, including exquisite Jewelry Sets, Haldi Sets, and Bridal Lehengas/Dupattas and Nikah Pen. Rent designer pieces for your special day without the commitment, and shine with the perfect accessories and outfits.</b></P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal">DM for more Information</h2>
+            <a href="https://www.instagram.com/makeover__by__nazmin/" target="_blank" rel="noopener noreferrer"><button class="btn bg-primary w-lg" >Follow me</button></a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+            <div class="portfolio">
+                <div class="filters">
+                    <a href="#" data-filter=".new" class="active">All</a>
+                    <a href="#" data-filter=".bridal">Bridal</a>
+                    <a href="#" data-filter=".rentals">Rentals</a>
+                    <a href="#" data-filter=".hairstyles">Hairstyles</a>
+                </div>
+                <div class="portfolio-container">
+                    <?php
+                    $query = "SELECT * FROM images ORDER BY id DESC";
+                    $result = mysqli_query($conn, $query);
+                    if ($result) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            $cat = htmlspecialchars($row['category']);
+                            $filename = htmlspecialchars($row['filename']);
+                            $title = htmlspecialchars($row['title']);
+                            $description = htmlspecialchars($row['alt_text']);
+                            echo "<div class=\"col-md-6 col-lg-4 $cat new\">";
+                            echo "<div class=\"portfolio-item\">";
+                            echo "<img src=\"./assets/imgs/$filename\" class=\"img-fluid\" alt=\"$title\">";
+                            echo "<div class=\"content-holder\">";
+                            echo "<a class=\"img-popup\" href=\"./assets/imgs/$filename\"></a>";
+                            echo "<div class=\"text-holder\">";
+                            echo "<h6 class=\"title\">$title</h6>";
+                            if (!empty($description)) echo "<p>$description</p>";
+                            echo "</div></div></div></div>";
+                        }
+                        mysqli_free_result($result);
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+
+
+    <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Send a message</h4>
+                        <form onsubmit="emailSend(); reset(); return false;">
+                            <div class="form-group">
+                                <input class="form-control" type="text" placeholder="Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Message *" rows="7" required></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+91 72658 57123</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">Tower B - 301 Chand Park Heights, Near Shubham Party Plot, Tandlja Vadodara</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">divan.nishant66@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <!--<li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>-->
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/makeover__by__nazmin/" target="_blank" rel="noopener noreferrer"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://wa.me/7265857123/?text=Hello, I want a Makup Artist!" target="_blank" rel="noopener noreferrer"><i class="fa fa-whatsapp" style="font-size: 30px" aria-hidden="true"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light" style="font-size: 20px; text-align: center; padding: 2px;">
+                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <a href="https://www.linkedin.com/in/rahilshadiwan/" target="_blank" rel="noopener noreferrer"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Rahilsha Diwan</span></a> 
+            </p>
+        </div>
+    </footer>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+    <script>
+    // Simple client-side filter to work with isotope or plain show/hide
+    document.addEventListener('DOMContentLoaded', function(){
+        const filters = document.querySelectorAll('.filters a');
+        filters.forEach(function(a){
+            a.addEventListener('click', function(e){
+                e.preventDefault();
+                filters.forEach(f=>f.classList.remove('active'));
+                this.classList.add('active');
+                const filter = this.getAttribute('data-filter');
+                const items = document.querySelectorAll('.portfolio-container > div');
+                if (filter === '.new') { items.forEach(i=>i.style.display=''); return; }
+                items.forEach(function(it){
+                    if (it.classList.contains(filter.replace('.',''))) it.style.display=''; else it.style.display='none';
+                });
+            });
+        });
+    });
+    </script>
+
+</body>
+</html>
